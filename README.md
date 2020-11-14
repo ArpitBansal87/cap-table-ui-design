@@ -2,7 +2,7 @@
 
 An HTML+CSS+Vanilla JS implementation for the onboarding design.
 
-![](./Screenshot1.jpeg)
+![](./Screenshot1.png)
 
 
 ## ⚠️&nbsp; Found a bug? Missing a specific feature?
