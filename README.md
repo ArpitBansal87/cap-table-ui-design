@@ -1,4 +1,4 @@
-# Onboarding UI Design for Cap table
+# Onboarding UI Design 
 
 An HTML+CSS+Vanilla JS implementation for the onboarding design.
 
@@ -8,7 +8,3 @@ An HTML+CSS+Vanilla JS implementation for the onboarding design.
 
 ![](./ui_design.gif)
 
-## 📋 Assumptions
-
-- [x] HTML + CSS implementation are in accordance with the design.
-- [x] interaction is based on the functionality mentioned in the document.
