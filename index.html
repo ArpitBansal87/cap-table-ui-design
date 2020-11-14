@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Onboarding Cap table</title>
+    <meta name="description" content="Front end assignment " />
+    <meta name="author" content="ArpitBansal87" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="root">
+      <div class="container">
+        <div id="page-1" class="pageElement">
+          <div class="pageTitleSection">
+            <h2 id="page-1-heading" class="pageHeading">
+              Let’s Create your Cap Table!
+            </h2>
+            <span class="pageSubHeading"
+              >Select how you would like to create your cap table.</span
+            >
+          </div>
+          <div class="ctaSection">
+            <img src="upload_spreadsheets.svg" alt="Spreadsheet" />
+            <div class="ctaVerbiage" onclick="showPage2()">
+              <h3>Upload Spreadsheet</h3>
+              <span
+                >Download a cap table spreadsheet template, fill it out, upload
+                the completed template.
+              </span>
+            </div>
+          </div>
+          <div class="dividerSection">
+            <hr id="divider-62" class="divider" />
+            <span>Or</span>
+            <hr id="divider-auto" class="divider" />
+          </div>
+          <div class="ctaSection">
+            <img src="upload_investment_documents.svg" alt="Documents" />
+            <div class="ctaVerbiage">
+              <h3>Upload Investment Documents</h3>
+              <span
+                >Download a cap table spreadsheet template, fill it out, upload
+                the completed template.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="page-2" class="pageElement" style="display: none">
+          <div class="pageTitleSection">
+            <h2 id="page-1-heading" class="pageHeading">
+              Let’s Create your Cap Table!
+            </h2>
+            <span class="pageSubHeading"
+              >Stuck on what to do? You can always come back here to check on
+              what else you’ll need to add to complete your cap table.</span
+            >
+          </div>
+          <div id="navigationBack" class="sectionDivider" onclick="showPage1()">
+            <svg
+              width="10"
+              height="14"
+              viewBox="0 0 10 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.99163 12.2929C9.44724 12.6834 9.44724 13.3166 8.99163 13.7071C8.53601 14.0976 7.79732 14.0976 7.34171 13.7071L0.34171 7.70711C-0.0999652 7.32853 -0.115418 6.71894 0.306655 6.32428L6.72332 0.324282C7.15871 -0.0828372 7.89671 -0.11034 8.37168 0.262852C8.84665 0.636043 8.87874 1.26861 8.44335 1.67573L2.7815 6.96993L8.99163 12.2929Z"
+                fill="#BFBFBF"
+              />
+            </svg>
+            <span>Upload Investment Documents</span>
+          </div>
+          <div>
+            <div class="spreadsheetOption sectionDivider">
+              <input
+                type="radio"
+                id="founders-share-option"
+                name="spreadsheetOption"
+              />
+              <label for="founders-share-option">
+                <span class="labelHeading">Add Founder Shares</span>
+                <span class="labelSubtitle">
+                  Details on what founder shares are
+                </span>
+              </label>
+            </div>
+            <div class="spreadsheetOption sectionDivider">
+              <input
+                type="radio"
+                id="investments-option"
+                name="spreadsheetOption"
+              />
+              <label for="investments-option">
+                <span class="labelHeading"> Add Investments </span>
+                <span class="labelSubtitle">
+                  What are Investments, when you would have/add them
+                </span>
+              </label>
+            </div>
+            <div class="spreadsheetOption sectionDivider">
+              <input
+                type="radio"
+                id="equity-plans-option"
+                name="spreadsheetOption"
+              />
+              <label for="equity-plans-option">
+                <span class="labelHeading"> Add Equity Plans </span>
+                <span class="labelSubtitle"> Equity plan description </span>
+              </label>
+            </div>
+            <div class="spreadsheetOption sectionDivider">
+              <input
+                type="radio"
+                id="employee-grants"
+                name="spreadsheetOption"
+              />
+              <label for="employee-grants">
+                <span class="labelHeading"> Add Employee Grants </span>
+                <span class="labelSubtitle"> Employee grant description </span>
+              </label>
+            </div>
+            <div class="spreadsheetOption sectionDivider">
+              <input
+                type="radio"
+                id="review-cap-option"
+                name="spreadsheetOption"
+              />
+              <label for="review-cap-option">
+                <span class="labelHeading"> Review Cap Table </span>
+                <span class="labelSubtitle">
+                  All done? Invite your lawyer to review your cap table
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

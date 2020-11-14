@@ -1,0 +1,184 @@
+/* Inclusion of inter font family */
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html {
+  --maxWidth: 1284px;
+  --sectionMaxWidth: 30.75rem;
+  --ctaSubHeading: #303030;
+  --green100: #0f2319;
+  --white: #ffffff;
+  --grey30: #d6e0dc;
+  --green: #53b58d;
+}
+
+body {
+  background-color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: left;
+  letter-spacing: -0.01em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  padding: 0 0 8rem;
+}
+
+.pageElement {
+  padding: 35px 60px;
+}
+
+.pageTitleSection {
+  padding-bottom: 1.5rem;
+}
+
+.pageHeading {
+  margin-block-end: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 800;
+  color: var(--green100);
+}
+
+.pageSubHeading {
+  line-height: 140%;
+  display: block;
+  max-width: 27.5rem;
+  color: var(--ctaSubHeading);
+  line-height: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.ctaSection {
+  display: flex;
+  max-width: var(--sectionMaxWidth);
+  justify-content: flex-start;
+  background: rgba(83, 181, 141, 0.05);
+  border: 1.5px solid rgba(83, 181, 141, 0.8);
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 1.25rem 0;
+  cursor: pointer;
+}
+
+.ctaSection:hover {
+  border-color: rgba(12, 107, 69, 0.8);
+}
+
+.ctaVerbiage {
+  padding: 20px 5px;
+}
+
+.ctaVerbiage > h3 {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1rem;
+  margin: 0;
+}
+
+.ctaVerbiage > span {
+  font-size: 0.75rem;
+  line-height: 15px;
+}
+
+.dividerSection {
+  display: grid;
+  grid-template-columns: 62px 32px auto;
+  width: var(--sectionMaxWidth);
+  padding: 0.375rem 0;
+}
+
+.dividerSection > span {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey30);
+}
+
+.sectionDivider {
+  border-bottom: 1px solid;
+  max-width: var(--sectionMaxWidth);
+  border-color: var(--grey30);
+  cursor: pointer;
+}
+
+#navigationBack {
+  display: flex;
+  padding: 20px 0;
+}
+
+#navigationBack > span {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  justify-items: center;
+  padding-left: 10px;
+}
+
+.spreadsheetOption {
+  display: flex;
+  padding: 0.8125rem 0;
+}
+
+.spreadsheetOption:hover {
+  border: 1px solid;
+  border-color: var(--green);
+}
+
+.spreadsheetOption input {
+  margin-right: 1.35rem;
+  visibility: hidden;
+}
+
+.spreadsheetOption input::after {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  border-radius: 50%;
+  content: " ";
+  visibility: visible;
+  border: 2.5px solid #53b58d;
+  cursor: pointer;
+}
+.spreadsheetOption input:checked::after {
+  background-color: #53b58d;
+  box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+.spreadsheetOption label {
+  width: 100%;
+  cursor: pointer;
+}
+
+.spreadsheetOption span {
+  display: block;
+  font-size: 0.8125rem;
+}
+
+.labelHeading {
+  font-weight: 600;
+}
