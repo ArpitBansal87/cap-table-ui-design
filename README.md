@@ -2,9 +2,13 @@
 
 An HTML+CSS+Vanilla JS implementation for the onboarding design.
 
-![](./Screenshot1.png)
+![](./Screenshot.jpeg)
 
+## 🖥️ Demo
 
-## ⚠️&nbsp; Found a bug? Missing a specific feature?
+![](./ui_design.gif)
 
-Feel free to **file a new issue** with a respective title and description on the the [Onboarding Design Implementation](https://github.com/ArpitBansal87/cap-table-ui-design/issuess) repository. 
+## 📋 Assumptions
+
+- [x] HTML + CSS implementation are in accordance with the design.
+- [x] interaction is based on the functionality mentioned in the document.
